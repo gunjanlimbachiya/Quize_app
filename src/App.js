@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Container from "./components/Container";
 import ErrorPage from "./components/ErrorPage";
 import LandingPage from "./components/LandingPage";
@@ -8,7 +8,7 @@ import AppContext from "./context/AppContext";
 function App() {
   return (
     <AppContext>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Container />}>
             <Route index element={<LandingPage />} />
@@ -16,7 +16,7 @@ function App() {
             <Route path="/*" element={<ErrorPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppContext>
   );
 }
