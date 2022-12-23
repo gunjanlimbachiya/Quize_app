@@ -1,0 +1,146 @@
+@import "./variable";
+@import "./mixin";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $body-background;
+  color: #7d7d7d;
+}
+
+h1 {
+  color: $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: $primary-color;
+  color: $white-color;
+  border-radius: $border-radius;
+  border: none;
+  font: $primary-font-bold;
+  line-height: $button-height;
+  padding: $button-padding;
+
+  &:hover {
+    background-color: $button-hover-background;
+    color: $button-hover-color;
+  }
+
+  &:focus {
+    background-color: $button-hover-background;
+    color: $button-hover-color;
+  }
+}
+
+input.form-control,
+select.form-select {
+  line-height: 45px;
+  padding: 0rem 0.5rem;
+  border: $textbox-border;
+
+  &:focus {
+    border: none;
+    box-shadow: $textbox-focus-shadow;
+  }
+}
+
+main {
+  width: 90%;
+  background-color: $white-color;
+  border-radius: $border-radius;
+  padding: 1rem;
+  margin: 10% auto;
+  text-transform: capitalize;
+
+  @include mediaQ(768) {
+    width: 35%;
+    margin: 5% auto;
+  }
+
+  .option-selection {
+    label {
+      line-height: 30px;
+      font: $primary-font-bold;
+    }
+  }
+
+  .error {
+    color: red;
+  }
+}
+
+.quize-page {
+  .score {
+    color: $primary-color;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .question {
+    font: $primary-font-bold;
+    font-size: 1.15rem;
+    margin: 20px 0;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+      text-align: left;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .popup-box {
+    position: absolute;
+    display: flex;
+    padding: 30px;
+    background-color: $white-color;
+    border-radius: $border-radius;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    a {
+      background-color: $primary-color;
+      color: $white-color;
+      border-radius: $border-radius;
+      border: none;
+      font: $primary-font-bold;
+      line-height: $button-height;
+      padding: $button-padding;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $button-hover-background;
+        color: $button-hover-color;
+      }
+
+      &:focus {
+        background-color: $button-hover-background;
+        color: $button-hover-color;
+      }
+    }
+  }
+}

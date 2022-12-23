@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font: 400 16px "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #aa68dd;
+  color: #7d7d7d;
+}
+
+h1 {
+  color: #9b54d5;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #9b54d5;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font: 700 16px "Ubuntu", sans-serif;
+  line-height: 45px;
+  padding: 0 1.5rem;
+}
+button:hover {
+  background-color: #9b47e0;
+  color: #fff;
+}
+button:focus {
+  background-color: #9b47e0;
+  color: #fff;
+}
+
+input.form-control,
+select.form-select {
+  line-height: 45px;
+  padding: 0rem 0.5rem;
+  border: 1px solid #e9ddff;
+}
+input.form-control:focus,
+select.form-select:focus {
+  border: none;
+  box-shadow: 0 0 0 0.25rem rgba(170, 104, 221, 0.5);
+}
+
+main {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 10% auto;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) {
+  main {
+    width: 35%;
+    margin: 5% auto;
+  }
+}
+main .option-selection label {
+  line-height: 30px;
+  font: 700 16px "Ubuntu", sans-serif;
+}
+main .error {
+  color: red;
+}
+
+.quize-page .score {
+  color: #9b54d5;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.quize-page .question {
+  font: 700 16px "Ubuntu", sans-serif;
+  font-size: 1.15rem;
+  margin: 20px 0;
+}
+.quize-page .options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.quize-page .options button {
+  text-align: left;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay .popup-box {
+  position: absolute;
+  display: flex;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay .popup-box h4 {
+  margin-bottom: 20px;
+}
+.overlay .popup-box a {
+  background-color: #9b54d5;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font: 700 16px "Ubuntu", sans-serif;
+  line-height: 45px;
+  padding: 0 1.5rem;
+  text-decoration: none;
+}
+.overlay .popup-box a:hover {
+  background-color: #9b47e0;
+  color: #fff;
+}
+.overlay .popup-box a:focus {
+  background-color: #9b47e0;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

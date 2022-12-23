@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+$primary-color: #9b54d5;
+$primary-color-dark: #9b47e0;
+$body-color: #7d7d7d;
+$white-color: #fff;
+$body-background: #aa68dd;
+
+$primary-font: 400 16px "Ubuntu", sans-serif;
+$primary-font-bold: 700 16px "Ubuntu", sans-serif;
+
+$boder-color: #e9ddff;
+$border-radius: 5px;
+$border-width: 1px;
+
+$textbox-height: 45px;
+$textbox-focus-color: #aa68dd;
+$textbox-border: 1px solid $boder-color;
+$textbox-focus-shadow: 0 0 0 0.25rem rgb(170, 104, 221, 0.5);
+
+$button_backgroung: $primary-color;
+$button-height: $textbox-height;
+$button-padding: 0 1.5rem;
+$button-font: $primary-font-bold;
+$button-hover-background: $primary-color-dark;
+$button-hover-color: $white-color;
+$button-focus-background: $primary-color-dark;
+$button-focus-color: $white-color;
